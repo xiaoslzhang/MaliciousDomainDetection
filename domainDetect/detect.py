@@ -141,7 +141,7 @@ def per_query(domain):
             '5f07a63179f229a50716c97e875a7b6298bd5a89d25e663fe7e391ceeb57a117',
             '36fd21588bac96f60698705c1df1464ed496c8f2bc812153c467e48d5a2eade1'
             ]
-    num = random.randint(0, 80)
+    num = random.randint(0, 79)
     return virustotal_verify(keys[num], domain, False)
 
 #if __name__ == "__main__":

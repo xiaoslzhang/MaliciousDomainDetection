@@ -27,12 +27,11 @@ class PyTest(TestCommand):
 def main():
     if sys.version_info <(3,0):
         raise RuntimeError('python 3.0+ is require')
-    install_requires =[
-        'json',
-        'random',
-        'requests',    
-    ]
-    tests_requires = install_requires + ['pytest']
+    #install_requires =[
+    #    'json',
+    #    'requests',    
+    #]
+   # tests_requires = install_requires + ['pytest']
     setup(
         name='domainDetect',
         version=read_version(),
@@ -47,8 +46,8 @@ def main():
         entry_points={
             'console_scripts':['domainDetect = domainDetect.cli:main']    
         },
-        install_requires=install_requires,
-        tests_requires=tests_requires,
+        #install_requires=install_requires,
+        #tests_requires=tests_requires,
         cmdclass={'test':PyTest},
         classfiers=[
             'License::Freeware',
