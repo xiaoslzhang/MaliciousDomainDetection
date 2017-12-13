@@ -8,6 +8,7 @@ python3 setup.py install
 
 # 使用示例
 python3 环境下使用
+
 import domainDectect.detect as dt
 
 print(dt.per_query('www.google.com'))
